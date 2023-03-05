@@ -15,7 +15,7 @@ which provides easy to use syntax, and easy to setup environment according to th
 Website URL: [herokuapp](https://the-internet.herokuapp.com/)
 
 ## 📝 Installation
-[Java(JDK)](https://www.oracle.com/java/technologies/downloads/)
+[Java(JDK) 17](https://www.oracle.com/java/technologies/downloads/)
 
 [Eclipse](https://www.eclipse.org/downloads/)
 

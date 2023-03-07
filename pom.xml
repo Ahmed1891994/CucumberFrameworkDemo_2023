@@ -16,11 +16,11 @@
 				<artifactId>maven-compiler-plugin</artifactId>
 				<version>3.8.1</version>
 				<configuration>
-					<compilerVersion>17</compilerVersion>
-					<source>17</source>
-					<target>17</target>
-					<testSource>17</testSource>
-					<testTarget>17</testTarget>
+					<compilerVersion>11</compilerVersion>
+					<source>11</source>
+					<target>11</target>
+					<testSource>11</testSource>
+					<testTarget>11</testTarget>
 				</configuration>
 			</plugin>
 			<plugin>

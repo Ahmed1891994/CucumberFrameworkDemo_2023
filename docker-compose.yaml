@@ -56,7 +56,7 @@ services:
       ports:
       - "5903:5900"   
    testng-module:
-      image: ahmedhakem/selenium-docker:selenium-docker
+      image: ahmedhakem/cucumber-docker:cucumber-docker
       depends_on: 
          - chrome
          - firefox

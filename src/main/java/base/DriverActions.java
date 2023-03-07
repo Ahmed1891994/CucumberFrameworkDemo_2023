@@ -12,6 +12,7 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
@@ -77,13 +78,15 @@ public class DriverActions {
 		driver.findElement(element).click();
 	}
 
-	// hover on button
+	// hover on
 	public void hoverOn(By element) {
 		MyLogger.info("Wait Hoverer Element to be Visible");
 		wait.until(ExpectedConditions.visibilityOfElementLocated(element));
 		Actions action = new Actions(driver);
 		MyLogger.info("Hover on Element");
-		action.moveToElement(driver.findElement(element)).perform();
+		WebElement webelement = driver.findElement(element);
+		action.moveToElement(webelement).perform();
+		action.moveByOffset(0, 0).perform();
 	}
 
 	// select checkbox

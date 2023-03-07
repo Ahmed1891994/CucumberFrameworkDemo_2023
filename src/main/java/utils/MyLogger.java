@@ -13,6 +13,11 @@ public class MyLogger {
 		String sTestCaseName = scenario.getName().replaceAll("[^a-zA-Z0-9]", "_").replaceAll("_+", "_");
 		info(getCallInfo() + "\n\n************** Execution Started : " + sTestCaseName + " **************\n");
 	}
+	
+	public static synchronized void startTestCase(String sTestCaseName) {
+		sTestCaseName = sTestCaseName.replaceAll("[^a-zA-Z0-9]", "_").replaceAll("_+", "_");
+		info(getCallInfo() + "\n\n************** Execution Started : " + sTestCaseName + " **************\n");
+	}
 
 	public static void endTestCase(Scenario scenario) {
 		String sTestCaseName = scenario.getName().replaceAll("[^a-zA-Z0-9]", "_").replaceAll("_+", "_");

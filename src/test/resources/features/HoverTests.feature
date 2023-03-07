@@ -8,6 +8,6 @@ Feature: Hover Tests
 
     Examples: 
       | index |
-      |     1 |
-      |     2 |
-      |     3 |
+      | 1 |
+      | 2 |
+      | 3 |

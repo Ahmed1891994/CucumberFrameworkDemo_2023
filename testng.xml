@@ -1,0 +1,21 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="herokuapp Suite">
+	<test name="Chrome Tests">
+		<parameter name="browser" value="Chrome"></parameter>
+		<classes>
+			<class name="cucumberOptions.TestNGTestRunner" />
+		</classes>
+	</test>
+	<test name="Edge Tests">
+		<parameter name="browser" value="Edge"></parameter>
+		<classes>
+			<class name="cucumberOptions.TestNGTestRunner" />
+		</classes>
+	</test>
+	<test name="Firefox Tests">
+		<parameter name="browser" value="Firefox"></parameter>
+		<classes>
+			<class name="cucumberOptions.TestNGTestRunner" />
+		</classes>
+	</test>
+</suite>

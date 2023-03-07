@@ -10,8 +10,8 @@ Feature: DropDown Tests
       | index |
       |     1 |
       |     2 |
-      
-   Scenario Outline: Verify default value after refreshing when choosing by index
+
+  Scenario Outline: Verify default value after refreshing when choosing by index
     Given User Clicks on link "Dropdown"
     When User Chooses Item by index "<index>"
     And Verify Item chosen is the right choice for index "<index>"
@@ -22,18 +22,18 @@ Feature: DropDown Tests
       | index |
       |     1 |
       |     2 |
-      
+
   Scenario Outline: Verify DropDown Functionality works for Text
     Given User Clicks on link "Dropdown"
     When User Chooses Item by txt <text>
     Then Verify Item chosen is the right choice for txt <text>
 
     Examples: 
-      | text |
+      | text                      |
       | "Please select an option" |
-      | "Option 1" |
-      | "Option 2" |
-      
+      | "Option 1"                |
+      | "Option 2"                |
+
   Scenario Outline: Verify default value after refreshing when choosing by txt
     Given User Clicks on link "Dropdown"
     When User Chooses Item by txt <text>
@@ -42,7 +42,7 @@ Feature: DropDown Tests
     Then Verify No Item is chosen
 
     Examples: 
-      | text |
+      | text                      |
       | "Please select an option" |
-      | "Option 1" |
-      | "Option 2" |
+      | "Option 1"                |
+      | "Option 2"                |

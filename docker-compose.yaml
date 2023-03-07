@@ -34,7 +34,7 @@ services:
          - SE_EVENT_BUS_PUBLISH_PORT=4442
          - SE_EVENT_BUS_SUBSCRIBE_PORT=4443         
    testng-module:
-      image: ahmedhakem/selenium-docker:selenium-docker
+      image: ahmedhakem/cucumber-docker:cucumber-docker
       depends_on: 
          - chrome
          - firefox

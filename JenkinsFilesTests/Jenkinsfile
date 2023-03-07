@@ -4,7 +4,7 @@ pipeline {
     stages {
     	stage("Start Pull Latest Image"){
     		steps {
-    	     	bat "docker pull ahmedhakem/selenium-docker:selenium-docker"
+    	     	bat "docker pull ahmedhakem/cucumber-docker:cucumber-docker"
     	    }	
     	}
     	stage("Start Grid"){

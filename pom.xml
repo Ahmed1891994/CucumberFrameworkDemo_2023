@@ -17,6 +17,9 @@
 				<version>3.8.1</version>
 				<configuration>
 					<compilerVersion>11</compilerVersion>
+					<excludes>
+						<exclude>*/*Tests.java</exclude>
+					</excludes>
 					<source>11</source>
 					<target>11</target>
 					<testSource>11</testSource>

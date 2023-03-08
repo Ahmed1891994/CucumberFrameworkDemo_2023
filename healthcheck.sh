@@ -4,7 +4,7 @@
 # MODULE
 
 echo "Checking if hub is ready - $HUBHOST"
-
+echo ">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>"
 while [ "$( curl -s http://$HUBHOST:4444/wd/hub/status | jq -r .value.ready )" != "true" ]
 do
 	sleep 1

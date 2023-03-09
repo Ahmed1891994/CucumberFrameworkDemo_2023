@@ -8,7 +8,7 @@ while [ "$( curl -s http://$HUBHOST:4444/wd/hub/status | jq -r .value.ready )" !
 do
 	sleep 1
 done
-
+sleep 10000000
 # start the java command
 java -cp framework_jar.jar:framework_jar-tests.jar:libs/* -DHUBHOST=$HUBHOST -Denv=prod org.testng.TestNG $MODULE
     

@@ -7,7 +7,7 @@ WORKDIR /usr/shared
 
 #Add .jar files to the workspace
 ADD target/framework_jar.jar .
-ADD target/framework_jar-tests.jar .
+ADD target/framework_jar-tests.jar src/test/resources/framework_jar-tests.jar
 ADD target/libs libs
 
 # Add suitefiles

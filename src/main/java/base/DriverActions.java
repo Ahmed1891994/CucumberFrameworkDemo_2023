@@ -86,7 +86,7 @@ public class DriverActions {
 		MyLogger.info("Hover on Element");
 		WebElement webelement = driver.findElement(element);
 		action.moveToElement(webelement).perform();
-		action.moveByOffset(0, 0).perform();
+		action.moveByOffset(1, 0).perform();
 	}
 
 	// select checkbox

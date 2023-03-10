@@ -12,5 +12,6 @@ done
 # start the java command
 java xf framework_jar-tests.jar
 cp features src/test/resources/features
+sleep 10000000
 java -cp framework_jar.jar:framework_jar-tests.jar:libs/* -DHUBHOST=$HUBHOST -Denv=prod org.testng.TestNG $MODULE
     

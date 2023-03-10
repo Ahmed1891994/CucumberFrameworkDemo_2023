@@ -10,5 +10,6 @@ do
 done
 
 # start the java command
-java -cp framework_jar.jar:src/test/resources/framework_jar-tests.jar:libs/* -Dcucumber.features=. -DHUBHOST=$HUBHOST -Denv=prod org.testng.TestNG $MODULE
+sleep 10000000
+java -cp framework_jar.jar:framework_jar-tests.jar:libs/* -Dcucumber.features=. -DHUBHOST=$HUBHOST -Denv=prod org.testng.TestNG $MODULE
     

@@ -10,10 +10,5 @@ do
 done
 
 # start the java command
-java xf framework_jar-tests.jar
-mkdir -p src/test/resources
-cp framework_jar-tests.jar src/test/resources/framework_jar-tests.jar
-
-sleep 10000000
-java -cp framework_jar.jar:src/test/resources/framework_jar-tests.jar:libs/* -DHUBHOST=$HUBHOST -Denv=prod org.testng.TestNG $MODULE
+java -cp framework_jar.jar:src/test/resources/framework_jar-tests.jar:libs/* -Dcucumber.features=. -DHUBHOST=$HUBHOST -Denv=prod org.testng.TestNG $MODULE
     

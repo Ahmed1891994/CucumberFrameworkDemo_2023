@@ -2,9 +2,9 @@
 Feature: DropDown Tests
 
   Scenario Outline: Verify DropDown Functionality works for Indexes
-    Given User Clicks on link "Dropdown"
-    When User Chooses Item by index "<index>"
-    Then Verify Item chosen is the right choice for index "<index>"
+    Given User in "Dropdown" page
+    When User Chooses Item by index <index>
+    Then Verify Item chosen is the right choice for index <index>
 
     Examples: 
       | index |
@@ -12,9 +12,9 @@ Feature: DropDown Tests
       |     2 |
 
   Scenario Outline: Verify default value after refreshing when choosing by index
-    Given User Clicks on link "Dropdown"
-    When User Chooses Item by index "<index>"
-    And Verify Item chosen is the right choice for index "<index>"
+    Given User in "Dropdown" page
+    When User Chooses Item by index <index>
+    And Verify Item chosen is the right choice for index <index>
     And User Refreshes Page
     Then Verify No Item is chosen
 
@@ -24,7 +24,7 @@ Feature: DropDown Tests
       |     2 |
 
   Scenario Outline: Verify DropDown Functionality works for Text
-    Given User Clicks on link "Dropdown"
+    Given User in "Dropdown" page
     When User Chooses Item by txt <text>
     Then Verify Item chosen is the right choice for txt <text>
 
@@ -35,7 +35,7 @@ Feature: DropDown Tests
       | "Option 2"                |
 
   Scenario Outline: Verify default value after refreshing when choosing by txt
-    Given User Clicks on link "Dropdown"
+    Given User in "Dropdown" page
     When User Chooses Item by txt <text>
     And Verify Item chosen is the right choice for txt <text>
     And User Refreshes Page
